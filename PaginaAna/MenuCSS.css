@@ -35,6 +35,12 @@ header{
     padding: 0px;
 }
 
+.imglogo{
+    height: 3em;
+    width: 10em;
+    margin-top: 0.5em;   
+    padding-left: 1em;
+
 .logo p a{
     width: 30%;
     height: 70px;
@@ -94,7 +100,7 @@ header label:hover{
 
 /*Cuando la pantalla se haga pequeña ocultar el menu en la esquina*/
 
-@media (max-width:1000px){
+@media (max-width:1024px){
     header label{
         display: block;
         float:left;
@@ -104,15 +110,19 @@ header label:hover{
     }
 
     .logo{
-        width: 30%;
-        height: 70px;
+        width: 30%;        
         background: #efb810;
-        float:right;
-        margin-top: 0px;
-        padding: 0px;
-        margin-left: 200px;
+        float:inline-end;
+        margin-top: 0;
+        margin-left: 8em;
         
     }
+
+    .imglogo{
+        height: 3em;
+        width: 10em;
+        margin-top: 0.5em;   
+        padding-left: 1em;
 
     .menu{
         position:absolute; /*absolute*/
