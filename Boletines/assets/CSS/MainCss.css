@@ -1,0 +1,209 @@
+html{
+    font-family: 'Gluten', cursive;
+}
+
+.container{
+    background: #C9CC00;
+    height: 100vh;
+    display: flex;  /*Alineacion con flexbox*/
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    max-width: 960px;
+    max-height: 500px;
+    width: 100%;
+    height: 80vh;
+    background-color:white;
+    border-radius: 4px;
+    position: relative;
+    
+    /*Como se comporta el contenido que se desborda de la pagina en un dispositivo*/
+    overflow: scroll;
+    /*overflow-x: hidden;*/
+
+}
+
+
+/*Movile first, este codigo estaba en el media*/
+.content{
+    padding: 1em;
+}
+td{
+    display: block;
+    width: 100%;
+}
+
+        
+
+th{
+    display: none;
+}
+
+
+
+.actions{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.close{
+    height: 40px;
+    width: 40px;
+    color: white;
+    border-radius: 50%;
+    background-color: teal;
+    display: inline-block;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16),0 3px 6px rgba(0,0,0,0.23);
+    font-weight: 300;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    text-decoration:none;
+    color: #d500f9;
+}
+
+/* a:hover se le conoce como pseudoclase */
+a:hover{
+opacity: 0.5;
+}
+
+img{
+    max-width: 100%;
+}
+/*
+a:visited{
+
+}
+*/
+/*para botones*/
+a:active{
+background: red;
+}
+
+a:focus{
+    background: blue;
+}
+
+.paragraf{
+    line-height: 1.8em;
+    font-weight: 200;
+}
+
+.title{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p{
+    color:black;
+}
+.red{
+    height: 200px;
+    width: 100px;
+    background-color: blue;
+}
+#boton-pago{
+    background-color: yellow;
+}
+
+.fa-star{
+    color: yellow;
+}
+
+
+
+.table{
+    width: 100%;
+    border-spacing: 0;
+}
+
+.table td, .table th{
+    padding: 1em;
+    text-align: left;
+}
+
+.table tr:nth-child(even){
+    background-color: grey;
+}
+
+.title-item{
+    border-bottom: solid 2px #c6426e;
+    font-size: 2em;
+}
+
+.main-image{
+    float: left;
+    margin-right: 1em;
+    height: 250px;
+}
+
+.address{
+    font-weight: bold;
+   color:  #642b63;
+   font-size: 1.2em;
+   margin-top: 1em;
+   display: inline-block;
+}
+
+.position{
+    background-color: turquoise;
+    color: white;
+    padding: 0.4em;
+    border-radius: 4px;
+    margin-right: 0.5em;
+}
+
+
+@media(min-width:900px){
+    .content{
+        padding: 1.8em;
+    }
+    th{
+        width: auto;
+       display: table-cell;
+    }
+
+    td{
+       display: table-cell;
+    }
+
+    td:nth-of-type(1){
+        font-size: 1em;
+    }
+    
+    
+    /*
+    Lo movi para usar movile first
+    .content{
+        padding: 1em;
+    }
+    td{
+        display: block;
+        width: 100%;
+    }
+    td:nth-of-type(1){
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #642b63;
+    }
+    th{
+        display: none;
+    }
+    */
+}
+
+
+@media (min-height:550px){
+
+    .content{
+        height: 500px;
+
+    }
+}

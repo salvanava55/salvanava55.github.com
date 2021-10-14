@@ -1,0 +1,44 @@
+Style.scss
+
+html,body{
+	height:100%;
+	width:100%;
+}
+
+.video-container{
+	height:100%;
+	width:100%;
+	overflow:hidden;
+	position:absolute;
+	video{
+	//Cubra toda la pantalla
+		min-width:100%;
+		min-height:100%;
+
+		//El navegador no altere la escala
+		width:auto;
+		height:auto;
+
+		//Centrarlo
+		position:absolute;
+		top:50%;
+		left:50%;
+		-webkit-transform: translate(-50%,-50%)
+		transform: translate(-50%,-50%)
+	}
+}
+
+.relative{
+	position:relative;
+}
+
+.up{
+	z-index:10;
+}
+
+.full-height{
+	height:100%;
+	
+}
+
+

@@ -1,0 +1,24 @@
+%html
+	%head
+		%link{rel:"stylesheet", href:"css/flexboxgrid.min.css"}
+		%link{rel:"stylesheet", href:"css/bootstrap.css"}
+		%link{rel:"stylesheet", href:"https://necolas.github.io/normalize.css/8.0.1/normalize.css"}
+		%link{rel:"stylesheet", href:"css/Style.css"}
+		%title Restaurante
+	%body
+		.video-container
+			%video{autoplay:true, loop:true, muted:true,width:"1280",height:"720",poster:"./Videos/Woman.png"} 
+				%source{src:"./Videos/Woman.mp4",typ:"Videos"}
+			.row.full-height.middle-xs.center-xs.relative.up
+				.col-xs-12
+					.box
+						%img{src:"./img/Logo2.png" ,width:200}
+				%nav.fixed.top.right.navigation.white-text#navigation
+					%ul.list-inline
+						%li.medium Mujeres
+						%li.medium Hombres
+						%li.medium Niñas
+						%li.medium Niños
+						%li.medium Ubicacion
+						%li.medium Contacto
+						

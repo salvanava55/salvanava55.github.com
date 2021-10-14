@@ -40,6 +40,7 @@ header{
     width: 10em;
     margin-top: 0.5em;   
     padding-left: 1em;
+}
 
 .logo p a{
     width: 30%;
@@ -110,19 +111,30 @@ header label:hover{
     }
 
     .logo{
+        /*
+height: 5em;
+margin-left: 0em;
+        */
         width: 30%;        
         background: #efb810;
         float:inline-end;
         margin-top: 0;
         margin-left: 8em;
-        
+      
+
+
+
     }
 
     .imglogo{
         height: 3em;
         width: 10em;
-        margin-top: 0.5em;   
-        padding-left: 1em;
+        margin-top: 0.5em;
+        padding-right: 1em;
+        
+        
+        
+    }
 
     .menu{
         position:absolute; /*absolute*/

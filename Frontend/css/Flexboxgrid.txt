@@ -1,0 +1,1 @@
+Permite ordenar verticalmente sin necesidad de Javascript

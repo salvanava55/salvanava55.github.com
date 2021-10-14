@@ -1,0 +1,78 @@
+Style.scss html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+.video-container {
+  height: 100%;
+}
+.video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.navigation{
+  li{
+    padding: 5px 10px;
+  }
+}
+
+.white-text{
+  color: white;
+}
+
+.title{
+  font-size: 4em;
+}
+
+.medium{
+  font-size: 1.5em;
+  text-shadow: 2px 2px 2px black;
+}
+
+.festive-script{
+  font-family: 'Dancing Script', cursive;
+}
+
+.fixed{
+  position: fixed;
+}
+
+.relative{
+  position:relative;
+}
+
+.top{
+top: 3em;
+}
+
+.right{
+right: 5em;
+}
+
+/* z-index sirve para indicar la posicion de la capa encima... */
+.up{
+  z-index:10;
+}
+
+.full-height{
+  height:100%;
+
+}
+
+.row{
+  margin: 0;
+
+}
+
+img{
+  border-radius: 5px;
+  box-shadow: 0 0 15px #ddd;
+}
